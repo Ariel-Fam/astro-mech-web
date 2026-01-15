@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { hanalei, saira } from "@/lib/fonts"
-import { Card, CardTitle, CardContent} from "@/components/ui/card"
+import { saira } from "@/lib/fonts"
+import { Card, CardContent} from "@/components/ui/card"
 
 type abilityData = {
     name: string;

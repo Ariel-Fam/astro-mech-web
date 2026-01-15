@@ -6,7 +6,7 @@ import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 import { Suspense } from "react";
 import { Card, CardTitle, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import { saira, hanalei } from "@/lib/fonts";
+import { saira } from "@/lib/fonts";
 import Footer from "@/components/Footer";
 
 function Model({ url }: { url: string }) {
@@ -14,7 +14,7 @@ function Model({ url }: { url: string }) {
 
   // Optional: auto-center + scale
   // You can remove this if you want manual positioning.
-  gltf.scene.traverse((obj: any) => {
+  gltf.scene.traverse((obj: THREE.Object3D) => {
     if (obj.isMesh) {
       obj.castShadow = true;
       obj.receiveShadow = true;
