@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear();
+  
   
   return (
     <footer className="w-[100vw]  z-40">

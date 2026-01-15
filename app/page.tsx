@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import { geo, saira, pixelfy, hanalei, nosifer } from "@/lib/fonts";  
+import { saira, pixelfy, hanalei } from "@/lib/fonts";  
 import { Card, CardTitle, CardContent } from "@/components/ui/card";
 import Galaxy from "@/components/Galaxy";
 import Lightning from "@/components/Lightning";
