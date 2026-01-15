@@ -14,10 +14,11 @@ function Model({ url }: { url: string }) {
 
   // Optional: auto-center + scale
   // You can remove this if you want manual positioning.
-  gltf.scene.traverse((obj: THREE.Object3D) => {
-    if (obj.isMesh) {
-      obj.castShadow = true;
-      obj.receiveShadow = true;
+  gltf.scene.traverse((obj) => {
+    if ((obj as THREE.Mesh).isMesh) {
+      const mesh = obj as THREE.Mesh;
+      mesh.castShadow = true;
+      mesh.receiveShadow = true;
     }
   });
 
