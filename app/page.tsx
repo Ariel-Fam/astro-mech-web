@@ -503,7 +503,7 @@ export default function Home() {
       </section>
 
 
-      <section className=" bg-black h-screen">
+      <section className="absolute bg-black h-screen">
 
        
 
