@@ -433,7 +433,7 @@ export default function Home() {
       </section>
 
 
-      <section className="flex flex-col items-center justify-center bg-gray-600 h-[140vh]">
+      <section className="flex flex-col items-center justify-center bg-gray-600 h-[170vh]">
 
 
           <div className="grid grid-rows-2">
@@ -503,7 +503,7 @@ export default function Home() {
       </section>
 
 
-      <section className="absolute bg-black h-screen">
+      <section className=" bg-black h-screen">
 
        
 
