@@ -433,7 +433,7 @@ export default function Home() {
       </section>
 
 
-      <section className="flex flex-col items-center justify-center bg-gray-600 h-[170vh]">
+      <section className="flex flex-col items-center justify-center bg-gray-600 h-[200vh]">
 
 
           <div className="grid grid-rows-2">
