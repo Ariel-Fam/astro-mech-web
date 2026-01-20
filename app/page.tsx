@@ -11,7 +11,7 @@ import AbilityCard from "@/components/abilityCards";
 import { Button } from "@/components/ui/button";
 import ModelViewer from "@/components/ModelViewer";
 import DirectionalReveal from "@/components/DirectionalReveal";
-import { Dir } from "fs";
+
 
 
 export default function Home() {
