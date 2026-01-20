@@ -10,6 +10,8 @@ import { abilityData } from "@/lib/data";
 import AbilityCard from "@/components/abilityCards";
 import { Button } from "@/components/ui/button";
 import ModelViewer from "@/components/ModelViewer";
+import DirectionalReveal from "@/components/DirectionalReveal";
+import { Dir } from "fs";
 
 
 export default function Home() {
@@ -27,13 +29,19 @@ export default function Home() {
         "
         >
 
-          <Image
-          src={"/astroMech.png"}
-          height={200}
-          width={300}
-          alt="img"
-          className="mb-4 sm:mb-4 md:mb-20 lg:mb-12"
-          />
+          <DirectionalReveal direction="top-to-bottom" duration={2}>
+            <Image
+            src={"/astroMech.png"}
+            height={200}
+            width={300}
+            alt="img"
+            className="mb-4 sm:mb-4 md:mb-20 lg:mb-12"
+            />
+
+
+          </DirectionalReveal>
+
+        
 
 
 
@@ -44,15 +52,20 @@ export default function Home() {
 
               <CardContent className="grid grid-rows-3 sm:grid-rows-3 md:grid-cols-3 lg:grid-cols-3 gap-4">
 
-                <Image
-                src={"/cosmaraLogo.png"}
-                height={150}
-                width={150}
-                alt="img"
-                className="rounded-3xl ml-24 sm:ml-14 md:ml-22 lg:ml-1"
-                />
+                <DirectionalReveal direction="left-to-right" duration={3}>
+                  <Image
+                  src={"/cosmaraLogo.png"}
+                  height={150}
+                  width={150}
+                  alt="img"
+                  className="rounded-3xl ml-24 sm:ml-14 md:ml-22 lg:ml-1"
+                  />
 
-            
+                </DirectionalReveal>
+
+
+
+    
 
                 <Image
                 src={"/iso2.png"}
@@ -63,53 +76,69 @@ export default function Home() {
 
 
 
-
-                <Card className="flex flex-col gap-7 items-center w-60 h-80 border-purple-700 border-2 ml-17 sm:ml-17 md:ml-0 lg:ml-0  ">
-
-                  <CardTitle>Planet System:</CardTitle>
-
-                  <CardContent>
-                    Cosmae
-                  </CardContent>
-
-                  <CardTitle>Core Intelligence:</CardTitle>
-
-                  <CardContent>
-                    Quantum-5
-                  </CardContent>
-
-                  <CardTitle>Serial Number:</CardTitle>
-
-                  <CardContent>
-                    0110
-                  </CardContent>
+     
 
 
-              </Card>
+                <DirectionalReveal direction="right-to-left" duration={3}>
+
+                  <Card className="flex flex-col gap-7 items-center w-60 h-80 border-purple-700 border-2 ml-17 sm:ml-17 md:ml-0 lg:ml-0  ">
+
+                    <CardTitle>Planet System:</CardTitle>
+
+                    <CardContent>
+                      Cosmae
+                    </CardContent>
+
+                    <CardTitle>Core Intelligence:</CardTitle>
+
+                    <CardContent>
+                      Quantum-5
+                    </CardContent>
+
+                    <CardTitle>Serial Number:</CardTitle>
+
+                    <CardContent>
+                      0110
+                    </CardContent>
+
+
+                  </Card>
+
+                </DirectionalReveal>
 
 
 
-              <Card className="bg-black w-[90vw] mt-10 mr-10 sm:mr-10 md:mr-0 lg:mr-0">
 
-                <CardContent className="p-8">
+                <DirectionalReveal direction="bottom-to-top">
 
-                  <CardTitle>
-                  <h1 className={`${hanalei.className}
-                    text-green-600 text-4xl`}>Ai Generated Character</h1>
-                  </CardTitle>
+                  <Card className="bg-black w-[90vw] mt-10 mr-10 sm:mr-10 md:mr-0 lg:mr-0">
+
+                    <CardContent className="p-8">
+
+                      <CardTitle>
+                      <h1 className={`${hanalei.className}
+                        text-green-600 text-4xl`}>Ai Generated Character</h1>
+                      </CardTitle>
 
 
-                  <div className="mt-20">
+                      <div className="mt-20">
 
-                    
+                        
 
-                    <h3 className={`${hanalei.className}
-                    text-yellow-400 text-1xl `}>In a distant corner of the cosmos where stars collide and galaxies merge, meet Astro Mech. A hero forged from the fabric of
-                      space and time, as he ventures through the Ai generated planetary system called Cosmae.
-                    </h3>
-                  </div>
-                </CardContent>
-              </Card>
+                        <h3 className={`${hanalei.className}
+                        text-yellow-400 text-1xl `}>In a distant corner of the cosmos where stars collide and galaxies merge, meet Astro Mech. A hero forged from the fabric of
+                          space and time, as he ventures through the Ai generated planetary system called Cosmae.
+                        </h3>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                </DirectionalReveal>
+
+
+
+
+
 
 
 
@@ -165,13 +194,18 @@ export default function Home() {
 
           <div className="flex flex-col items-center justify-center w-[100vw] h-[50vh] sm:w-[100vw] md:w-[50vw] lg:w-[60vw] lg:h-[50vw] lg:rounded-br-3xl  bg-white">
 
-            <Image
-            src={"/argoView.png"}
-            height={400}
-            width={400}
-            alt="img"
 
-            />
+            <DirectionalReveal direction="left-to-right" duration={2}>
+
+              <Image
+              src={"/argoView.png"}
+              height={400}
+              width={400}
+              alt="img"
+
+              />
+
+            </DirectionalReveal>
 
           
 
@@ -181,13 +215,18 @@ export default function Home() {
 
           <div className="flex flex-col opacity-100 sm:opacity-100  md:opacity-100 lg:opacity-100 items-center justify-center -[100vw] h-[50vh] sm:w-[100vw] md:w-[50vw]  lg:rounded-b-lg bg-black">
 
-            <Image
-            src={"/comfyUi.png"}
-            height={400}
-            width={400}
-            alt="img"
+            <DirectionalReveal direction="right-to-left" duration={2}>
 
-            />
+              <Image
+              src={"/comfyUi.png"}
+              height={400}
+              width={400}
+              alt="img"
+
+              />
+
+            </DirectionalReveal>
+
 
           
 
@@ -244,6 +283,11 @@ export default function Home() {
             />
           </div>
 
+
+          <DirectionalReveal variant="fade">
+
+
+          </DirectionalReveal>
           <Card className="absolute" >
 
             <CardTitle> <h1 className={`${saira.className} text-4xl md:text-5xl text-gray-800 text-center mb-12`}>
@@ -359,6 +403,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
+
           
 
 
@@ -398,7 +443,10 @@ export default function Home() {
 
           <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
             {abilityData.map((data) => (
-              <AbilityCard key={data.name} name={data.name} descrition={data.description} src={data.src} />
+
+              <DirectionalReveal key={data.name} direction="top-to-bottom" duration={2}>
+                <AbilityCard key={data.name} name={data.name} descrition={data.description} src={data.src} />
+              </DirectionalReveal>
             ))}
           </div>
         </div>
@@ -451,40 +499,46 @@ export default function Home() {
             />
 
             </div>
+
+
+            <DirectionalReveal direction="right-to-left">
+
+              <Card className="p-7 w-[70vw] mb-20">
+                <CardTitle className={`${saira.className}`} >Astro_Mech_0110.html Album</CardTitle>
+
+                <CardContent className={`${saira.className} flex flex-col gap-4`}>This album showcases some of 
+                my most thematic and versatile music production to date, it is no available on your streaming platform of choice. The album includes unique Spotify canvases that convey the exploratory nature of the audio and concept,
+                it is based on Astro Mech’s ventures through the CosmoVerse.
+
+                <div className="flex flex-col items-center gap-2">
+                  <Link href={"https://open.spotify.com/album/6K6HP0OCSjeal5wjzc7KhI?si=Twu3wM9eT4urbMWuXJFFpA"}>
+                    <Button className="hover:bg-amber-400 hover:text-green-800 hover:scale-125" >Liston on Spotify</Button>
+                  </Link>
+
+                  <Link href={"https://music.apple.com/ca/artist/arlie-p/1442490102"}>
+                    <Button className="hover:bg-amber-400 hover:text-green-800 hover:scale-125" >Liston on Apple Music</Button>
+                  </Link>
+
+
+                  <Link href={"https://www.youtube.com/watch?v=1p9E5EzrHFo&list=OLAK5uy_lWRTbsNGuMuvtZj0q_BpAygU3mp1EqGDs"}>
+                    <Button className="hover:bg-amber-400 hover:text-green-800 hover:scale-125" >Liston on Youtube</Button>
+                  </Link>
+                
+                </div>
+
+
+
+
+
+                </CardContent>
+
+
+
+              </Card>
+
+            </DirectionalReveal>
             
 
-            <Card className="p-7 w-[70vw] mb-20">
-              <CardTitle className={`${saira.className}`} >Astro_Mech_0110.html Album</CardTitle>
-
-              <CardContent className={`${saira.className} flex flex-col gap-4`}>This album showcases some of 
-              my most thematic and versatile music production to date, it is no available on your streaming platform of choice. The album includes unique Spotify canvases that convey the exploratory nature of the audio and concept,
-              it is based on Astro Mech’s ventures through the CosmoVerse.
-
-              <div className="flex flex-col items-center gap-2">
-                <Link href={"https://open.spotify.com/album/6K6HP0OCSjeal5wjzc7KhI?si=Twu3wM9eT4urbMWuXJFFpA"}>
-                  <Button className="hover:bg-amber-400 hover:text-green-800 hover:scale-125" >Liston on Spotify</Button>
-                </Link>
-
-                <Link href={"https://music.apple.com/ca/artist/arlie-p/1442490102"}>
-                  <Button className="hover:bg-amber-400 hover:text-green-800 hover:scale-125" >Liston on Apple Music</Button>
-                </Link>
-
-
-                <Link href={"https://www.youtube.com/watch?v=1p9E5EzrHFo&list=OLAK5uy_lWRTbsNGuMuvtZj0q_BpAygU3mp1EqGDs"}>
-                  <Button className="hover:bg-amber-400 hover:text-green-800 hover:scale-125" >Liston on Youtube</Button>
-                </Link>
-              
-              </div>
-
-
-
-
-
-              </CardContent>
-
-
-
-            </Card>
 
 
 
