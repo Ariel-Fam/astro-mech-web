@@ -11,6 +11,7 @@ import AbilityCard from "@/components/abilityCards";
 import { Button } from "@/components/ui/button";
 import ModelViewer from "@/components/ModelViewer";
 import DirectionalReveal from "@/components/DirectionalReveal";
+import CanvasSequence from "@/components/CanvasSequence";
 
 
 
@@ -579,6 +580,8 @@ export default function Home() {
 
       </section>
 
+      <CanvasSequence />
+
 
       <section className="bg-orange-400 h-screen">
         <ModelViewer />
@@ -593,24 +596,6 @@ export default function Home() {
 
     </section>
 
-
-    
-
-
-
-
-
-
-      
-
-
-    
-      
-
-
-
-
-      
    
       
   </div>
