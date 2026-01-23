@@ -232,7 +232,7 @@ export default function Home() {
         logos={slideImages}
         speed={10}
         direction="left"
-        logoHeight={160}
+        logoHeight={360}
         gap={60}
         hoverSpeed={0}
         scaleOnHover
@@ -244,7 +244,7 @@ export default function Home() {
       
 
       <section className="h-[100vh]">
-        <div className="grid grid-rows-2 sm:grid-rows-2 md:grid-cols-2 lg:grid-cols-2 gap-0">
+        <div className="grid grid-rows-2 sm:grid-rows-2 md:grid-cols-2 lg:grid-cols-2 gap-0 overflow-clip">
 
 
           <div className="flex flex-col items-center justify-center w-[100vw] h-[50vh] sm:w-[100vw] md:w-[50vw] lg:w-[60vw] lg:h-[50vw] lg:rounded-br-3xl  bg-white">
