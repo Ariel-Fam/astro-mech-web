@@ -12,10 +12,53 @@ import { Button } from "@/components/ui/button";
 import ModelViewer from "@/components/ModelViewer";
 import DirectionalReveal from "@/components/DirectionalReveal";
 import CanvasSequence from "@/components/CanvasSequence";
+import { useState, useEffect, use } from "react";
+import LogoLoop from "@/components/LogoLoop";
+
 
 
 
 export default function Home() {
+
+
+
+  const slideImages = [
+  { src: "/slide/1.png", alt: "Slide 1" },
+  { src: "/slide/2.png", alt: "Slide 2" },
+  { src: "/slide/3.png", alt: "Slide 3" },
+  { src: "/slide/4.png", alt: "Slide 4" },
+  { src: "/slide/5.png", alt: "Slide 5" },
+  { src: "/slide/6.png", alt: "Slide 6" },
+  { src: "/slide/7.png", alt: "Slide 7" },
+  { src: "/slide/8.png", alt: "Slide 8" },
+  { src: "/slide/9.png", alt: "Slide 9" },
+  { src: "/slide/10.png", alt: "Slide 10" },
+  { src: "/slide/11.png", alt: "Slide 11" },
+  { src: "/slide/12.png", alt: "Slide 12" },
+  { src: "/slide/13.png", alt: "Slide 13" },
+  { src: "/slide/14.png", alt: "Slide 14" },
+  { src: "/slide/15.png", alt: "Slide 15" },
+  { src: "/slide/16.png", alt: "Slide 16" },
+  { src: "/slide/17.png", alt: "Slide 17" },
+  { src: "/slide/18.png", alt: "Slide 18" },
+  { src: "/slide/19.png", alt: "Slide 19" },
+  { src: "/slide/20.png", alt: "Slide 20" },
+];
+
+
+  
+
+  useEffect(() => {
+
+    
+
+
+  }, [])
+
+  
+
+
+  
   return (
     <div >
 
@@ -170,7 +213,7 @@ export default function Home() {
         <div className="w-full
             bg-[url('/logoBackground.png')] bg-cover bg-center bg-no-repeat
             flex flex-col items-center justify-center
-            px-6 text-white h-[50vh]">
+            px-6 text-white h-[100vh]">
 
             <Image
               src={"/softwareLogo.png"}
@@ -185,9 +228,27 @@ export default function Home() {
         </div>
         
 
-        
+       
+
+
+
 
       </section>
+
+       <LogoLoop
+        logos={slideImages}
+        speed={10}
+        direction="left"
+        logoHeight={160}
+        gap={60}
+        hoverSpeed={0}
+        scaleOnHover
+        ariaLabel="Technology partners"
+        className="relative"
+        
+        />
+
+      
 
       <section className="h-[100vh]">
         <div className="grid grid-rows-2 sm:grid-rows-2 md:grid-cols-2 lg:grid-cols-2 gap-0">
