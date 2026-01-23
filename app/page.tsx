@@ -230,9 +230,9 @@ export default function Home() {
 
        <LogoLoop
         logos={slideImages}
-        speed={10}
+        speed={58}
         direction="left"
-        logoHeight={360}
+        logoHeight={300}
         gap={60}
         hoverSpeed={0}
         scaleOnHover
