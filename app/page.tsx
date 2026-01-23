@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import ModelViewer from "@/components/ModelViewer";
 import DirectionalReveal from "@/components/DirectionalReveal";
 import CanvasSequence from "@/components/CanvasSequence";
-import { useState, useEffect, use } from "react";
 import LogoLoop from "@/components/LogoLoop";
 
 
@@ -48,12 +47,6 @@ export default function Home() {
 
   
 
-  useEffect(() => {
-
-    
-
-
-  }, [])
 
   
 
