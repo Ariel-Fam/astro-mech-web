@@ -34,8 +34,8 @@ export default function ModelViewer() {
 
       <Card className="text-center flex flex-col items-center justify-center">
         <CardTitle >Interactive 3D Model Bellow</CardTitle>
-        <CardContent className={saira.className}> Right click to drag to rotate the model</CardContent>
-        <CardContent className={saira.className}> Right click and Shift to drag model around</CardContent>
+        <CardContent className={saira.className}> Left click to drag to rotate the model</CardContent>
+        <CardContent className={saira.className}> Left click and Shift to drag model around</CardContent>
         <CardContent className={saira.className}>
           <Image
 
