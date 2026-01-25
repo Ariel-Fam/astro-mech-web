@@ -30,25 +30,25 @@ useGLTF.preload("/astroMech.glb");
 
 export default function ModelViewer() {
   return (
-    <div  style={{ width: "100%", height: "95vh" }}>
+    <div style={{ width: "100%", height: "95vh" }}>
 
-        <Card className="text-center flex flex-col items-center justify-center">
-            <CardTitle >Interactive 3D Model Bellow</CardTitle>
-            <CardContent className={saira.className}> Right click to drag to rotate the model</CardContent>
-            <CardContent className={saira.className}> Right click and Shift to drag model around</CardContent>
-            <CardContent className={saira.className}>
-                <Image
+      <Card className="text-center flex flex-col items-center justify-center">
+        <CardTitle >Interactive 3D Model Bellow</CardTitle>
+        <CardContent className={saira.className}> Right click to drag to rotate the model</CardContent>
+        <CardContent className={saira.className}> Right click and Shift to drag model around</CardContent>
+        <CardContent className={saira.className}>
+          <Image
 
-                src={"/model3d.png"}
-                width={300}
-                height={300}
-                alt=""
+            src={"/model3d2.png"}
+            width={300}
+            height={300}
+            alt=""
 
 
 
-                />
-            </CardContent>
-        </Card>
+          />
+        </CardContent>
+      </Card>
 
       <Canvas
         shadows
@@ -64,7 +64,7 @@ export default function ModelViewer() {
         <directionalLight position={[5, 8, 5]} intensity={1.2} castShadow />
 
         <Suspense fallback={null}>
-          <Model  url="/astroMech.glb" />
+          <Model url="/astroMech.glb" />
 
           {/* Nice lighting environment (optional) */}
           <Environment preset="city" />
@@ -78,7 +78,7 @@ export default function ModelViewer() {
           makeDefault
         />
       </Canvas>
-      <Footer/>
+      <Footer />
     </div>
   );
 } 

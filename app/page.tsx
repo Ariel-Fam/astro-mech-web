@@ -228,18 +228,18 @@ export default function Home() {
 
       </section>
 
-       <LogoLoop
-        logos={slideImages}
-        speed={58}
-        direction="left"
-        logoHeight={300}
-        gap={60}
-        hoverSpeed={0}
-        scaleOnHover
-        ariaLabel="Technology partners"
-        className="relative"
-        
-        />
+      <LogoLoop
+      logos={slideImages}
+      speed={58}
+      direction="left"
+      logoHeight={300}
+      gap={60}
+      hoverSpeed={0}
+      scaleOnHover
+      ariaLabel="Technology partners"
+      className="relative"
+      
+      />
 
       
 
