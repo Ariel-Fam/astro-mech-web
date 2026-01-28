@@ -22,11 +22,11 @@ function Model({ url }: { url: string }) {
     }
   });
 
-  return <primitive object={gltf.scene} position={[0, -1, 0]} />;
+  return <primitive object={gltf.scene} position={[0, 0, 0]} />;
 }
 
 // Optional: prefetch
-useGLTF.preload("/astroMech.glb");
+useGLTF.preload("/hoveRoid.glb");
 
 export default function ModelViewer() {
   return (
@@ -64,10 +64,10 @@ export default function ModelViewer() {
         <directionalLight position={[5, 8, 5]} intensity={1.2} castShadow />
 
         <Suspense fallback={null}>
-          <Model url="/astroMech.glb" />
+          <Model url="/hoveRoid.glb" />
 
           {/* Nice lighting environment (optional) */}
-          <Environment preset="city" />
+          <Environment preset="park" />
         </Suspense>
 
         {/* Orbit controls */}
