@@ -296,7 +296,7 @@ export default function Home() {
               <h1 className={`${pixelfy.className}
               text-black mb-7 text-2xl `}>Origins</h1>
 
-              <h3 className="text-white text-center">Astro Mech is an Ai generated character that was developed created using the Flex Dev Model on Open Art Ai platform, then i later trained a SDXL 1.0 LORA on those images and created my own LORA
+              <h3 className="text-white text-center">Astro Mech is an Ai generated character that was developed created using the Flux Dev Model on Open Art Ai platform, then i later trained a SDXL 1.0 LORA on those images and created my own LORA
                 to enable local image gen.
               </h3>
             </div>
