@@ -7,7 +7,7 @@ import Galaxy from "@/components/Galaxy";
 import Lightning from "@/components/Lightning";
 import PrismaticBurst from "@/components/PrismaticBurst";
 import { abilityData } from "@/lib/data";
-import AbilityCard from "@/components/abilityCards";
+import AbilityCard2 from "@/components/abilitityCards2";
 import { Button } from "@/components/ui/button";
 import ModelViewer from "@/components/ModelViewer";
 import DirectionalReveal from "@/components/DirectionalReveal";
@@ -496,11 +496,11 @@ export default function Home() {
             
           />
 
-          <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+          <div id="abilities" className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
             {abilityData.map((data) => (
 
               <DirectionalReveal key={data.name} direction="top-to-bottom" duration={2}>
-                <AbilityCard key={data.name} name={data.name} descrition={data.description} src={data.src} />
+                <AbilityCard2 key={data.name} name={data.name} descrition={data.description} src={data.src} vidName={data.vidName} /> 
               </DirectionalReveal>
             ))}
           </div>

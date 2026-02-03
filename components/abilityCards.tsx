@@ -3,9 +3,9 @@ import { saira } from "@/lib/fonts"
 import { Card, CardContent} from "@/components/ui/card"
 
 type abilityData = {
-    name: string;
-    descrition: string; 
-    src: string;
+    name: string 
+    descrition: string 
+    src: string ;
 }
 
 
@@ -13,7 +13,7 @@ export default function AbilityCard({name,descrition,src}: abilityData) {
 
     return (
 
-        <Card className="">
+        <Card className="w-[70vw] h-500">
 
 
             <CardContent className="flex flex-col items-center justify-center gap-4">
@@ -43,5 +43,8 @@ export default function AbilityCard({name,descrition,src}: abilityData) {
     
 
 }
+
+
+
 
 
