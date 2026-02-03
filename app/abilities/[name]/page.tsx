@@ -1,5 +1,3 @@
-
-import AbilityCard from "@/components/abilityCards";
 import { abilityData } from "@/lib/data";
 import Image from "next/image";
 import { Card, CardContent} from "@/components/ui/card";
