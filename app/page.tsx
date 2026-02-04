@@ -339,10 +339,6 @@ export default function Home() {
           </div>
 
 
-          <DirectionalReveal variant="fade">
-
-
-          </DirectionalReveal>
           <Card className="absolute" >
 
             <CardTitle> <h1 className={`${saira.className} text-4xl md:text-5xl text-gray-800 text-center mb-12`}>
@@ -350,118 +346,123 @@ export default function Home() {
                         </h1>
             </CardTitle>
 
-            <CardContent className="flex flex-col items-center">
+            <DirectionalReveal direction="top-to-bottom" duration={4}>
 
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-12">
 
-                {/* Row 1 */}
-                <Link href={"https://astro-mech-next.vercel.app/aerthys"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/aerthys.png"}
-                    height={120}
-                    width={120}
-                    alt="Aerthys"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>AERTHYS</span>
+              <CardContent className="flex flex-col items-center">
+
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-12">
+
+                  {/* Row 1 */}
+                  <Link href={"https://astro-mech-next.vercel.app/aerthys"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/aerthys.png"}
+                      height={120}
+                      width={120}
+                      alt="Aerthys"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>AERTHYS</span>
+                  </Link>
+
+                  <Link href={"https://astro-mech-next.vercel.app/cosmara"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/cosmara.png"}
+                      height={120}
+                      width={120}
+                      alt="Cosmara"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>COSMARA</span>
+                  </Link>
+
+                  <Link href={"https://astro-mech-next.vercel.app/elyria"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/elyria.png"}
+                      height={120}
+                      width={120}
+                      alt="Elyria"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>ELYRIA</span>
+                  </Link>
+
+                  <Link href={"https://astro-mech-next.vercel.app/kairos"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/kairos.png"}
+                      height={120}
+                      width={120}
+                      alt="Kairos"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>KAIROS</span>
+                  </Link>
+
+                  {/* Row 2 */}
+                  <Link href={"https://astro-mech-next.vercel.app/stellaluna"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/stellaluna.png"}
+                      height={120}
+                      width={120}
+                      alt="Aerthys"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>STELLALUNA</span>
+                  </Link>
+
+                  <Link href={"https://astro-mech-next.vercel.app/luminaria"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/luminaria.png"}
+                      height={120}
+                      width={120}
+                      alt="Cosmara"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>LUMINARIA</span>
+                  </Link>
+
+                  <Link href={"https://astro-mech-next.vercel.app/terraverde"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/terraverde.png"}
+                      height={120}
+                      width={120}
+                      alt="Elyria"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>TERRAVERDE</span>
+                  </Link>
+
+                  <Link href={"https://astro-mech-next.vercel.app/nexarion"} className="flex flex-col items-center group">
+                    <Image
+                      src={"/nexarion.png"}
+                      height={120}
+                      width={120}
+                      alt="Kairos"
+                      className="transition-transform group-hover:scale-140"
+                    />
+                    <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>NEXARION</span>
+                  </Link>
+
+                </div>
+
+                
+
+                <Link href="https://astro-mech-next.vercel.app/">
+                  <button className="bg-gray-900 text-white px-8 py-3 mb-4 rounded-full font-medium hover:bg-amber-400 hover:text-green-500 hover:scale-110 hover:shadow-lg transition-shadow duration-200">
+                    Explore Planets
+                  </button>
                 </Link>
 
-                <Link href={"https://astro-mech-next.vercel.app/cosmara"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/cosmara.png"}
-                    height={120}
-                    width={120}
-                    alt="Cosmara"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>COSMARA</span>
+                <Link href="https://astro-mech-next.vercel.app/cosmae/">
+                  <button className="bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-amber-400 hover:text-green-500 hover:scale-110 hover:shadow-lg transition-shadow duration-200">
+                    View 3D Model
+                  </button>
                 </Link>
 
-                <Link href={"https://astro-mech-next.vercel.app/elyria"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/elyria.png"}
-                    height={120}
-                    width={120}
-                    alt="Elyria"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>ELYRIA</span>
-                </Link>
 
-                <Link href={"https://astro-mech-next.vercel.app/kairos"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/kairos.png"}
-                    height={120}
-                    width={120}
-                    alt="Kairos"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>KAIROS</span>
-                </Link>
+              </CardContent>
+            </DirectionalReveal>
 
-                {/* Row 2 */}
-                <Link href={"https://astro-mech-next.vercel.app/stellaluna"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/stellaluna.png"}
-                    height={120}
-                    width={120}
-                    alt="Aerthys"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>STELLALUNA</span>
-                </Link>
-
-                <Link href={"https://astro-mech-next.vercel.app/luminaria"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/luminaria.png"}
-                    height={120}
-                    width={120}
-                    alt="Cosmara"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>LUMINARIA</span>
-                </Link>
-
-                <Link href={"https://astro-mech-next.vercel.app/terraverde"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/terraverde.png"}
-                    height={120}
-                    width={120}
-                    alt="Elyria"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>TERRAVERDE</span>
-                </Link>
-
-                <Link href={"https://astro-mech-next.vercel.app/nexarion"} className="flex flex-col items-center group">
-                  <Image
-                    src={"/nexarion.png"}
-                    height={120}
-                    width={120}
-                    alt="Kairos"
-                    className="transition-transform group-hover:scale-140"
-                  />
-                  <span className={`${saira.className} text-gray-700 font-semibold mt-2 text-sm tracking-wide`}>NEXARION</span>
-                </Link>
-
-              </div>
-
-              
-
-              <Link href="https://astro-mech-next.vercel.app/">
-                <button className="bg-gray-900 text-white px-8 py-3 mb-4 rounded-full font-medium hover:bg-amber-400 hover:text-green-500 hover:scale-110 hover:shadow-lg transition-shadow duration-200">
-                  Explore Planets
-                </button>
-              </Link>
-
-              <Link href="https://astro-mech-next.vercel.app/cosmae/">
-                <button className="bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-amber-400 hover:text-green-500 hover:scale-110 hover:shadow-lg transition-shadow duration-200">
-                  View 3D Model
-                </button>
-              </Link>
-
-
-            </CardContent>
           </Card>
 
 
@@ -503,11 +504,8 @@ export default function Home() {
           />
 
           <div id="abilities" className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
-            {abilityData.map((data) => (
-
-              <DirectionalReveal key={data.name} direction="top-to-bottom" duration={2}>
-                <AbilityCard2 key={data.name} name={data.name} descrition={data.description} src={data.src} vidName={data.vidName} /> 
-              </DirectionalReveal>
+            {abilityData.map(({name, description, src, vidName}) => (
+              <AbilityCard2 key={name} name={name} descrition={description} src={src} vidName={vidName} /> 
             ))}
           </div>
         </div>
