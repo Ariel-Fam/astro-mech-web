@@ -454,7 +454,7 @@ export default function Home() {
                 </button>
               </Link>
 
-              <Link href="https://astro-mech-next.vercel.app/cosmae">
+              <Link href="https://astro-mech-next.vercel.app/cosmae/">
                 <button className="bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-amber-400 hover:text-green-500 hover:scale-110 hover:shadow-lg transition-shadow duration-200">
                   View 3D Model
                 </button>
