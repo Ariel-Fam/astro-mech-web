@@ -29,56 +29,52 @@ function Model({ url }: { url: string }) {
 useGLTF.preload("/hoveRoid.glb");
 
 export default function ModelViewer() {
+
+  
   return (
-    <div style={{ width: "100%", height: "95vh" }}>
 
-      <Card className="text-center flex flex-col items-center justify-center">
-        <CardTitle >Interactive 3D Model Bellow</CardTitle>
-        <CardContent className={saira.className}> Left click to drag to rotate the model</CardContent>
-        <CardContent className={saira.className}> Left click and Shift to drag model around</CardContent>
-        <CardContent className={saira.className}>
-          <Image
+     <div style={{ width: "100%", height: "100vh", marginBottom: "40px" }}>
+           <Card className="text-center flex flex-col items-center justify-center">
+              <CardTitle >Interactive 3D Model Bellow</CardTitle>
+              <CardContent className={saira.className}> Left click to drag to rotate the model</CardContent>
+              <CardContent className={saira.className}> Left click and Shift to drag model around</CardContent>
+              <CardContent className={saira.className}>
+                <Image
 
-            src={"/model3d2.png"}
-            width={300}
-            height={300}
-            alt=""
+                  src={"/model3d2.png"}
+                  width={300}
+                  height={300}
+                  alt=""
 
 
 
-          />
-        </CardContent>
-      </Card>
+                />
+              </CardContent>
+           </Card>
 
-      <Canvas
-        shadows
-        camera={{ position: [0, 5, 4], fov: 20 }}
-        gl={{ antialias: true }}
-        onCreated={({ gl }) => {
-          // Purple background (renderer clear color)
-          gl.setClearColor(new THREE.Color("#5B21B6"), 1); // purple
-        }}
-      >
-        {/* Lights */}
-        <ambientLight intensity={0.6} />
-        <directionalLight position={[5, 8, 5]} intensity={1.2} castShadow />
+            <Canvas
+            shadows
+            camera={{ position: [0, 2, 3], fov: 40 }}
+            gl={{ 
+                antialias: true,
+                powerPreference: "default",
+            }}
+            onCreated={({ gl }) => {
+                gl.setClearColor(new THREE.Color("#5B21B6"), 1);
+              }}
+            
+            >
 
-        <Suspense fallback={null}>
-          <Model url="/hoveRoid.glb" />
-
-          {/* Nice lighting environment (optional) */}
-          <Environment preset="park" />
-        </Suspense>
-
-        {/* Orbit controls */}
-        <OrbitControls
-          enableDamping
-          dampingFactor={0.08}
-          rotateSpeed={0.8}
-          makeDefault
-        />
-      </Canvas>
-      <Footer />
-    </div>
+                <ambientLight intensity={0.5} />
+                <directionalLight position={[5, 5, 5]} intensity={1} />
+                <Suspense fallback={null}>
+                    <Model url="/hoveRoid.glb" />
+                </Suspense>
+                <OrbitControls enableDamping dampingFactor={0.08} rotateSpeed={0.8} makeDefault/>
+                <Environment preset="city" />
+            </Canvas>
+        </div>
+    
+    
   );
 } 
