@@ -73,6 +73,7 @@ export default function ModelViewer() {
                 <OrbitControls enableDamping dampingFactor={0.08} rotateSpeed={0.8} makeDefault/>
                 <Environment preset="city" />
             </Canvas>
+            <Footer />
         </div>
     
     
