@@ -296,7 +296,7 @@ export default function Home() {
               <h1 className={`${pixelfy.className}
               text-black mb-7 text-2xl `}>Origins</h1>
 
-              <h3 className="text-white text-center">Astro Mech is an Ai generated character that was developed created using the Flux Dev Model on Open Art Ai platform, then i later trained a SDXL 1.0 LORA on those images and created my own LORA
+              <h3 className="text-white text-center">Astro Mech is an Ai generated character that was developed, and created using the Flux Dev Model on Open Art Ai platform, then i later trained a SDXL 1.0 LORA on those images and created my own LORA
                 to enable local image gen.
               </h3>
             </div>
@@ -566,7 +566,7 @@ export default function Home() {
                 <CardTitle className={`${saira.className}`} >Astro_Mech_0110.html Album</CardTitle>
 
                 <CardContent className={`${saira.className} flex flex-col gap-4`}>This album showcases some of 
-                my most thematic and versatile music production to date, it is no available on your streaming platform of choice. The album includes unique Spotify canvases that convey the exploratory nature of the audio and concept,
+                my most thematic and versatile music production to date, it is now available on your streaming platform of choice. The album includes unique Spotify canvases that convey the exploratory nature of the audio and concept,
                 it is based on Astro Mech’s ventures through the CosmoVerse.
 
                 <div className="flex flex-col items-center gap-2">
