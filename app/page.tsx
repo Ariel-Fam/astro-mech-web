@@ -232,7 +232,7 @@ export default function Home() {
       logos={slideImages}
       speed={58}
       direction="left"
-      logoHeight={300}
+      logoHeight={333}
       gap={60}
       hoverSpeed={0}
       scaleOnHover
